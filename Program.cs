@@ -9,7 +9,7 @@ namespace ConversorBinaryDecimal
     class Program
     {
 
-        public static void CDeci_Bin(int value)
+        public static void DecToBin(int value)
         {
             int aux;
             int[] bin = new int[1];
@@ -37,7 +37,7 @@ namespace ConversorBinaryDecimal
             }
         }
 
-        public static void CBin_Deci(int value)
+        public static void BinToDec(int value)
         {
             int newValue = 0, rest; ;
 
@@ -50,14 +50,20 @@ namespace ConversorBinaryDecimal
             Console.Write("\n" + newValue);
 
         }
+
+        public static void DecToHex()
+        {
+
+        }
+
         static void Main(string[] args)
         {
             int num,num2=10;
             Console.WriteLine("Bem vindo!");
             num = Convert.ToInt32(Console.ReadLine());
 
-            CDeci_Bin(num);
-            CBin_Deci(num2);
+            DecToBin(num);
+            BinToDec(num2);
 
             Console.ReadLine();
         }
